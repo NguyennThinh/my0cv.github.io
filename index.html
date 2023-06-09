@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./css/font.css" />
+    <!--CSS Cho PC-->
+    <link rel="stylesheet" href="./css/PC.css" />
+    <!--CSS Cho tablet-->
+    <link rel="stylesheet" href="./css/tablet.css" />
+
+    <!--CSS Cho tablet-->
+    <link rel="stylesheet" href="./css/mobile.css" />
+  </head>
+  <body>
+    <!--Banner start-->
+    <div id="banner">
+      <img class="col-12 col-s-12" src="./images/banner.jpg" />
+      <div class="username">
+        <h1>Nguyễn Phúc Thịnh</h1>
+
+        <h2>Java Developer</h2>
+      </div>
+    </div>
+    <!--Banner end-->
+
+    <!--Menu start-->
+    <div id="nav">
+      <ul>
+        <li class="nav-item"><i class="icon-user"></i> Thông tin</li>
+
+        <li class="nav-item"><i class="icon-doc-text-inv"></i> Lý lịch</li>
+
+        <li class="nav-name">
+          <div>
+            Nguyễn Phúc Thinh <br />
+            Java Developers
+          </div>
+        </li>
+
+        <li class="nav-item"><i class="icon-certificate"></i> Chứng chỉ</li>
+
+        <li class="nav-item"><i class="icon-book"></i> Dự án</li>
+      </ul>
+    </div>
+
+    <!--Menu end-->
+
+    <!--Job target start -->
+    <div id="about">
+      <div class="target">
+        <h1 class="section-title" style="margin-bottom: 50px">
+          Mục tiêu nghề nghiệp
+        </h1>
+        <p>
+          Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp của
+          FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
+          <b>Java Developer</b>, có thể vận dụng những kiến thức đã được trau
+          dồi và không ngừng học hỏi để phát triển bản thân, cũng như hoàn thành
+          tốt nhất công việc được giao.
+        </p>
+      </div>
+
+      <div class="info">
+        <h1 class="section-title" style="margin-bottom: 50px">
+          Thông tin cá nhân
+        </h1>
+        <div class="lock">
+          <input
+            class="email"
+            type="text"
+            placeholder="Nhập email để xem thông tin"
+          />
+          <span>Hãy nhập thông tin</span>
+          <input
+            onclick="checkEmail()"
+            class="submit"
+            type="submit"
+            value="Xác nhận"
+          />
+        </div>
+        <div class="my-info">
+          <li><b>Giới tính</b> : Nam</li>
+          <li><b>Ngày sinh</b> : 14/02/2000</li>
+          <li><b>Điện thoại</b> : (+84) 866267xxx</li>
+          <li><b>Email</b> : nguyenthinhc9@gmail.com</li>
+          <li><b>Địa chỉ</b> : 185 Nguyễn Thái Sơn p4 Gò vấp</li>
+          <li>
+            <b>Website</b> :
+            <a href="https://github.com/NguyennThinh"
+              >https://github.com/NguyennThinh</a
+            >
+          </li>
+        </div>
+      </div>
+    </div>
+    <!--Job target  end-->
+
+    <!--about info  start-->
+    <div id="about-info">
+      <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <div class="my experience">
+            <div class="header">
+              <h1>Kinh nghiệm</h1>
+              <i class="ic-toolbox"></i>
+            </div>
+
+            <input
+              onclick="click()"
+              class="view-more"
+              type="button"
+              value="View More"
+            />
+            <div class="detail">
+              <ul>
+                <li><span>Công ty VNDC</span></li>
+                <h5
+                  style="
+                    font-weight: normal;
+                    font-style: italic;
+                    font-size: 12px;
+                    margin-bottom: 10px;
+                  "
+                >
+                  08/2022 - 12/2022
+                </h5>
+
+                <h5 style="font-weight: normal; font-size: 14px">
+                  - Xây dựng và phát triển ứng dụng android tv dựa trên thiết kế
+                  và yêu cầu đã có.
+                </h5>
+                <br />
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="my education">
+            <div class="header">
+              <h1>Học tập</h1>
+              <i class="ic-pencil"></i>
+            </div>
+
+            <input
+              onclick="click()"
+              class="view-more"
+              type="button"
+              value="View More"
+            />
+            <div class="detail">
+              <ul>
+                <li><span>Đại Học công nghiệp TP Hồ Chí Minh</span></li>
+                <h5 style="font-style: italic">08/2018-Hiện tại</h5>
+
+                <h5 style="font-size: 14px">
+                  - Chuyên ngành kỹ thuật phần mềm.<br />
+                  - GPA: 3/4.
+                </h5>
+                <br />
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="my activity">
+            <div class="header">
+              <h1>Hoạt động</h1>
+              <i class="ic-hotairballoon"></i>
+            </div>
+            <input
+              onclick="click()"
+              class="view-more"
+              type="button"
+              value="View More"
+            />
+            <div class="detail">
+              <ul>
+                <li><span>Giải bóng đá của trường</span></li>
+                <h5
+                  style="
+                    font-weight: normal;
+                    font-style: italic;
+                    font-size: 12px;
+                    margin-bottom: 10px;
+                  "
+                >
+                  06/2020 - 08/2020
+                </h5>
+
+                <h5 style="font-weight: normal; font-size: 14px">
+                  - Giải bóng đá của trường.
+                </h5>
+                <br />
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="my favorite">
+            <div class="header">
+              <h1>Sở thích</h1>
+              <i class="ic-telescope"></i>
+            </div>
+            <input
+              onclick="click()"
+              class="view-more"
+              type="button"
+              value="View More"
+            />
+            <div class="body detail">
+              <div>
+                <i class="ic-hotairballoon"></i>
+                <h4>Du lịch</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="my language">
+            <div class="header">
+              <h1>Ngôn ngữ</h1>
+              <i class="ic-mic"></i>
+            </div>
+            <input
+              onclick="click()"
+              class="view-more"
+              type="button"
+              value="View More"
+            />
+            <div style="margin-left: 20px" class="detail">
+              <h5 style="font-size: 15px">Tiếng anh: TOEIC 450</h5>
+              <div class="progress">
+                <span style="background: #199cdb"></span> <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="my skill">
+            <div class="header">
+              <h1>Kỹ năng</h1>
+              <i class="ic-tools-2"></i>
+            </div>
+            <input
+              onclick="click()"
+              class="view-more"
+              type="button"
+              value="View More"
+            />
+            <div class="progress-body detail" style="margin-left: 20px">
+              <h5>HTML/CSS: Fundation</h5>
+              <div class="progress">
+                <span style="background: #199cdb"></span> <span></span>
+                <span></span>
+              </div>
+
+              <h5>JavaScript: Fundation</h5>
+              <div class="progress">
+                <span style="background: #199cdb"></span> <span></span>
+                <span></span>
+              </div>
+              <h5>NodeJS: Fundation</h5>
+              <div class="progress">
+                <span style="background: #199cdb"></span> <span></span>
+                <span></span>
+              </div>
+              <h5>Java: Intermediate</h5>
+              <div class="progress">
+                <span style="background: #199cdb"></span>
+                <span style="background: #199cdb"></span> <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--about info  end-->
+
+    <!--Certificate start-->
+    <div id="certificate">
+      <h1 class="title">Chứng chỉ - Giải thưởng</h1>
+      <div class="certificate-body">
+        <div class="item-certificate">
+          <img src="./images/Cert_WEB.png" style="height: 100px" />
+
+          <div>
+            <b style="font-size: 13px">CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</b>
+
+            <h5 style="font-weight: normal">
+              -Chứng chỉ thuộc chương trình CCDN <br />
+              -GPA:8,6
+            </h5>
+          </div>
+        </div>
+        <div class="item-certificate">
+          <img src="./images/Cert_WEB.png" style="height: 100px" />
+          <div>
+            <b style="font-size: 13px">CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</b>
+
+            <h5 style="font-weight: normal">
+              -Chứng chỉ thuộc chương trình CCDN <br />
+              -GPA:8,6
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="certificate-body">
+        <div class="item-certificate">
+          <img src="./images/Cert_WEB.png" style="height: 100px" />
+          <div>
+            <b style="font-size: 13px">CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</b>
+
+            <h5 style="font-weight: normal">
+              -Chứng chỉ thuộc chương trình CCDN <br />
+              -GPA:8,6
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Certificate end-->
+
+    <!--Project end-->
+    <div id="project">
+      <h1 class="title">Dự án</h1>
+
+      <div class="row">
+        <div class="col-lg-4 col-sm-4">
+          <div class="item-project">
+            <img
+              style="height: 200px; width: 100%"
+              src="./images/project_1.png"
+            />
+            <div class="project-name">
+              <a href="ProjectCharter.html">CV CÁ NHÂN</a>
+            </div>
+
+            <div class="project-time">
+              <div>
+                <span
+                  style="
+                    background: #199cdb;
+                    border-radius: 20px;
+                    padding: 4px 10px 5px 10px;
+                  "
+                  >2021</span
+                >
+              </div>
+              <div class="my-position">
+                <div>
+                  <i style="padding: 5px 0px 5px 0px" class="icon-user-1"></i>
+                  <span>FUNIX</span>
+                </div>
+                <div>
+                  <i style="padding: 5px 0px 5px 0px" class="icon-lamp"></i>
+                  <span>Developer</span>
+                </div>
+              </div>
+            </div>
+            <table>
+              <tr>
+                <td style="width: 25%">Mô tả</td>
+                <td>
+                  Trang web CV online. Gồm cá thông tin cá nhân như kỹ năng nghề
+                  nghiệp.
+                </td>
+              </tr>
+              <tr>
+                <td>Nhiệm vụ</td>
+                <td>
+                  - Phát triển code <br />
+                  - Review code <br />
+                  - Tối ưu code
+                </td>
+              </tr>
+              <tr>
+                <td>Công nghệ</td>
+                <td>HTML/CSS</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+          <div class="item-project">
+            <img
+              style="height: 200px; width: 100%"
+              src="./images/project_2.png"
+            />
+            <div class="project-name">
+              <a href="ProjectCharter.html">TRANG WEB BÁN PC</a>
+            </div>
+
+            <div class="project-time">
+              <div>
+                <span
+                  style="
+                    background: #199cdb;
+                    border-radius: 20px;
+
+                    padding: 4px 10px 5px 10px;
+                  "
+                  >2020</span
+                >
+              </div>
+
+              <div class="my-position">
+                <div>
+                  <i style="padding: 5px 0px 5px 0px" class="icon-user-1"></i>
+                  <span>Website cá nhân</span>
+                </div>
+                <div>
+                  <i style="padding: 5px 0px 5px 0px" class="icon-lamp"></i>
+                  <span>Developer</span>
+                </div>
+              </div>
+            </div>
+            <table>
+              <tr>
+                <td style="width: 25%">Mô tả</td>
+                <td>
+                  Ứng dụng khách hàng có thể sử mua pc theo ý thích, giúp người
+                  quản lý có thể thống kê doanh thu quản lý đơn hàng,...
+                </td>
+              </tr>
+              <tr>
+                <td>Nhiệm vụ</td>
+                <td>
+                  - Phát triển code <br />
+                  - Review code <br />
+                  - Tối ưu code
+                </td>
+              </tr>
+              <tr>
+                <td>Công nghệ</td>
+                <td>HTML, CSS, JSP Servelt, MSSQL Server</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+          <div class="item-project">
+            <img
+              style="height: 200px; width: 100%"
+              src="./images/project_3.png"
+            />
+            <div class="project-name">
+              <a href="ProjectCharter.html">ỨNG DỤNG BÁN CAFE</a>
+            </div>
+
+            <div class="project-time">
+              <div>
+                <span
+                  style="
+                    background: #199cdb;
+                    border-radius: 20px;
+                    padding: 4px 10px 5px 10px;
+                  "
+                  >2021</span
+                >
+              </div>
+              <div class="my-position">
+                <div>
+                  <i style="padding: 5px 0px 5px 0px" class="icon-user-1"></i>
+                  <span>Website cá nhân</span>
+                </div>
+                <div>
+                  <i style="padding: 5px 0px 5px 0px" class="icon-lamp"></i>
+                  <span>Developer</span>
+                </div>
+              </div>
+            </div>
+            <table>
+              <tr>
+                <td style="width: 25%">Mô tả</td>
+                <td>
+                  Ứng dụng giúp nhân viên bán hàng có thể lên hóa đơn pha chế,
+                  quản lý vị trí ngồi của khách hàng, giúp người quản lý thống
+                  kê doanh thu theo tháng, năm, đưa ra các gói giảm giá hấp dẫn
+                  khách hàng
+                </td>
+              </tr>
+              <tr>
+                <td>Nhiệm vụ</td>
+                <td>
+                  - Phát triển code <br />
+                  - Review code <br />
+                  - Tối ưu code
+                </td>
+              </tr>
+              <tr>
+                <td>Công nghệ</td>
+                <td>Java GUI, Hibernate, MSSQL Server</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Project end-->
+
+    <div id="contact">
+      <div>
+        <i class="icon-facebook-circled"><span>Facebook</span></i>
+      </div>
+      <div>
+        <i class="icon-github-circled"><span>Github</span></i>
+      </div>
+      <div>
+        <i class="icon-linkedin-circled"><span>Linkedin</span></i>
+      </div>
+    </div>
+  </body>
+  <script src="./js/index.js"></script>
+</html>

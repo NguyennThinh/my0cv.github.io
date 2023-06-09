@@ -1,0 +1,132 @@
+.row {
+  background: blue;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.left {
+  display: grid;
+  grid-template-columns: 67% 33%;
+  grid-gap: 12px;
+}
+.item {
+  padding: 10px;
+  background: rgb(234, 253, 253);
+}
+span {
+  color: blue;
+  font-weight: bold;
+  font-size: 18px;
+}
+.item-body {
+  border-top: 1px solid rgba(155, 176, 177, 0.384);
+  display: flex;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.item-body i {
+  margin-left: 20px;
+}
+.goals-detail {
+  margin-left: 30px;
+  font-size: 12px;
+}
+.goals-detail h5 {
+  font-size: 12px;
+}
+
+.team-detail {
+  margin-left: 20px;
+  font-size: 12px;
+}
+.team-detail h5 {
+  font-size: 12px;
+}
+.scopes {
+  border-top: 1px solid rgba(155, 176, 177, 0.384);
+
+  padding-top: 10px;
+  margin-top: 10px;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.scopes div b {
+  font-size: 15px;
+}
+.scopes div h5 {
+  font-size: 12px;
+}
+.primary {
+  display: block;
+}
+.primary h5 {
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.time-line {
+  background: rgb(234, 253, 253);
+  padding: 10px;
+  height: 100%;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+.time-detail {
+  border-top: 1px solid rgba(155, 176, 177, 0.384);
+
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.time-detail span {
+  color: white;
+}
+.circle {
+  background: rgba(176, 133, 231, 0.61);
+  width: 50px;
+  height: 40px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+.detail {
+  margin-left: 20px;
+  border-bottom: 1px solid rgb(164, 231, 235);
+  width: 100%;
+}
+.detail h5 {
+  font-size: 12px;
+}
+.detail b {
+  font-size: 12px;
+}
+.time-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+/*CSS Cho màn hình tablet + mobile*/
+@media only screen and (max-width: 992px) {
+  .left {
+    display: block;
+  }
+  .item {
+    margin-bottom: 10px;
+  }
+  .scopes {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .primary {
+    display: block;
+  }
+  .item-body i {
+    margin-left: 10px;
+  }
+}
